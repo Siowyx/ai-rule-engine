@@ -46,7 +46,7 @@ public class JbpmUtil {
         FileUtils.deleteDirectory(resourcePath);
         FileUtils.moveDirectory(new File(clonedPath.getPath() + "/src/main/resources/com/myspace/" + projectName_lower), resourcePath);
 
-
+        /** delete the cloned project folder so that we can clone the project into the same destination next time */
         FileUtils.deleteDirectory(clonedPath);
     }
 
