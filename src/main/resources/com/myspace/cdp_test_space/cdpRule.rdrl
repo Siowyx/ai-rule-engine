@@ -1,0 +1,15 @@
+package com.myspace.cdp_test_space;
+
+import java.util.ArrayList;
+import org.json.simple.JSONObject;
+
+rule "cdp_test1_rule"
+	dialect "mvel"
+	ruleflow-group "cdp_test1_rf"
+	when
+		input : JSONObject( get("user_gameplan").get("focus_area_keys").contains("improve_credit_score")&& get("cb_user_summary").get("cbplus_membership_group") == ( "Not CB-Plus" ) && get("user_summary").get("is_icwb_membership"))
+		output : ArrayList( )
+	then
+		System.out.println("Conditions met");
+		output.add( input.get("_id") );
+end

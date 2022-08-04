@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<kmodule xmlns="http://jboss.org/kie/6.0.0/kmodule">
+    <kbase name="cdp_test_space_kbase" packages="com.myspace.cdp_test_space">
+        <ksession name="cdp_test_space_ksession"/>
+    </kbase>
+    <kbase name="myproject_kbase" packages="com.myspace.myproject">
+        <ksession name="myproject_ksession"/>
+    </kbase>
+<kbase name="demo_kbase" packages="com.myspace.demo">
+<ksession name="demo_ksession"/>
+</kbase>
+</kmodule>

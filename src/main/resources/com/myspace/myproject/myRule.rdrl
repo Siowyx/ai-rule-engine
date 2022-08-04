@@ -1,0 +1,14 @@
+package com.myspace.myproject;
+
+import java.lang.Number;
+import java.lang.Boolean;
+
+rule "myRule"
+	dialect "mvel"
+	ruleflow-group "my_rf"
+	when
+		obj : myObject( age >= 18 && salary >= 1000.0 )
+	then
+		obj.setIsEligible( true );
+		System.out.println("Eligible!");
+end

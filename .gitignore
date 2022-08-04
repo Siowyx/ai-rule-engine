@@ -1,0 +1,8 @@
+# Default ignored files
+.idea/
+target/
+*.class
+*.war
+*.ear
+*.logs
+*.iml

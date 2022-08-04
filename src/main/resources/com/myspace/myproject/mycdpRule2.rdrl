@@ -1,0 +1,14 @@
+package com.myspace.myproject;
+
+import java.lang.Number;
+import java.util.ArrayList;
+
+rule "mycdpRule2"
+	dialect "mvel"
+	ruleflow-group "mycdp2_rf"
+	when
+		cdp_user( this.cb_user_summary.is_blacklisted_user == false , id : this._id)
+		output : ArrayList( )
+	then
+		output.remove( id );
+end

@@ -1,0 +1,14 @@
+package com.myspace.myproject;
+
+import java.lang.Number;
+import java.util.ArrayList;
+
+rule "mycdpRule"
+	dialect "mvel"
+	ruleflow-group "mycdp_rf"
+	when
+		cdp_user( id : this._id, this.user_summary.is_icwb_membership == true , this.cb_user_summary.cbplus_membership_group == "Not CB-Plus" , this.user_gameplan.focus_area_keys contains "improve_credit_score" )
+		output : ArrayList( )
+	then
+		output.add( id );
+end
