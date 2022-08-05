@@ -14,3 +14,7 @@ To be able to run processes and rules created with JBPM
 7. Does reflection recursively starting from the main data object, setting all the field values of each object according to the input json file
 8. Run the process as many times as the number of user data
 9. Prints out the results as an array
+
+### Links
+ - Business Central - staging-jbpm.moneylion.io/business-central/kie-wb.jsp
+ - Swagger UI - https://staging-jbpm.moneylion.io/kie-server/docs/
