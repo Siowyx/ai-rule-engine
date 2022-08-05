@@ -16,5 +16,5 @@ To be able to run processes and rules created with JBPM
 9. Prints out the results as an array
 
 ### Links
- - Business Central - staging-jbpm.moneylion.io/business-central/kie-wb.jsp
+ - Business Central - https://staging-jbpm.moneylion.io/business-central/kie-wb.jsp
  - Swagger UI - https://staging-jbpm.moneylion.io/kie-server/docs/
