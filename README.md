@@ -2,7 +2,7 @@
 An internship project at MoneyLion
 
 ### Aim
-To be able to run processes and rules created with JBPM
+To be able to run processes and rules created with JBPM (https://www.jbpm.org)
 
 ### How it works
 1. Prompts user for project name and process name (assumes project is in "myspace", currently no validation of the user input)
@@ -18,3 +18,4 @@ To be able to run processes and rules created with JBPM
 ### Links
  - Business Central - https://staging-jbpm.moneylion.io/business-central/kie-wb.jsp
  - Swagger UI - https://staging-jbpm.moneylion.io/kie-server/docs/
+ - Notes on JBPM integration and guides on using business central - https://moneylion.atlassian.net/l/cp/mrn1pMuu
