@@ -33,7 +33,7 @@ public class ProcessMain {
         String processID = projectName.toLowerCase() + "." + processName;
         String kSessionName = projectName.toLowerCase() + "_ksession";
 
-        JbpmUtil.getAllFiles(projectName);          /** getting process and rule files from jbpm */
+//        JbpmUtil.getAllFiles(projectName);          /** getting process and rule files from jbpm */
         JbpmUtil.configureKsession(projectName);    /** configure kbase/ksession in kmodule.xml, ONLY necessary for new project */
 
         /** parse input data */
